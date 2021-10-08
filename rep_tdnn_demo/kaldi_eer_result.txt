@@ -1,0 +1,10 @@
+### original topology
+paste -d  ' ' trials cos_score.score.original | awk -F ' ' '{print$6,$3}' | compute-eer  -
+
+LOG (compute-eer[5.5.188~1419-e8d12]:main():compute-eer.cc:136) Equal error rate is 1.17009%, at threshold 156.419
+
+### plain topology through CS-Rep
+paste -d  ' ' trials cos_score.score.cs-rep  | awk -F ' ' '{print$6,$3}' | compute-eer  -
+
+LOG (compute-eer[5.5.188~1419-e8d12]:main():compute-eer.cc:136) Equal error rate is 1.17541%, at threshold 156.834
+
