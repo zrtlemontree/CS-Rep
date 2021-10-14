@@ -13,7 +13,8 @@ from collections import OrderedDict
 
 '''
 egs:
---trials trials --checkpoint trained_model/net.pth   --feature-path /data1/data_fbank/voxceleb1/test  --feature-type wav --gpu-id "0" --output ./
+--trials trials --checkpoint trained_model/net.pth   --feature-path /data1/data_fbank/voxceleb1/test  --feature-type wav --gpu-id "0" --output ./  --rep True
+
 '''
 
 

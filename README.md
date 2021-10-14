@@ -31,3 +31,12 @@ In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TD
 
 
 ## Examples
+Firstly, run the Path.sh. 
+
+### inference speed comparing
+
+### sid inference comparing
+Run the Rep-TDNN with CS-Rep to inference. Kaldi will be used in script to calculate scores.
+```Bash
+python3 sid_inference_cos.py  --trials trials  --checkpoint trained_model/net.pth  --feature-path /data1/data_fbank/voxceleb1/test --feature-type wav  --gpu-id "0"  --output ./  --rep True
+```
