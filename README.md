@@ -28,12 +28,13 @@ In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TD
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">The topologies of Rep-TDNN without and with CS-Rep. (Left): The multi-branch design in the train- ing period. (Right): The plain topology in the inference period.</div>
+    padding: 2px;">The topologies of Rep-TDNN without and with CS-Rep. (Left): The multi-branch design in the training period. (Right): The plain topology in the inference period.</div>
 </center>
 
 ## Requirement
 
 PyTorch>=1.2.0
+
 Cuda>=10.0
 
 ## Examples
@@ -43,6 +44,12 @@ Firstly, run the path.sh.
 ```
 
 ### inference speed comparing
+
+A demo of the inference speed test for Rep-TDNN. The inference speed margin of used CS-Rep or not will increase as the performance of the device increases. 
+```Bash
+python3 comparing_cs_rep.py 
+```
+
 
 ### sid inference comparing
 Run the Rep-TDNN with CS-Rep to inference. Kaldi will be used in script to calculate scores.
