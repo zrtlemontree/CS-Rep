@@ -6,9 +6,15 @@ We proposed a novel re-parameterization strategy called cross-sequential re-para
 
 In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TDNN. It achieved state-of-the-art performance while maintaining fast inference speed. 
 
+<center>
+	![绝对路径的图片](pic/cs-rep.png)
+</center>
+
+
+
 
 <center>
-    <img src="./pic/cs-rep.png">
+    <img src="pic/cs-rep.png">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
