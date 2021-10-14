@@ -16,6 +16,7 @@ In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TD
     padding: 2px;">The changes of topology for a multi-branch model when adopting CS-Rep.</div>
 </center>
 
+
 <center>
     <img src="./pic/diagram_rep_tdnn.png">
     <br>
