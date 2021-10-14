@@ -6,17 +6,16 @@ We proposed a novel re-parameterization strategy called cross-sequential re-para
 
 In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TDNN. It achieved state-of-the-art performance while maintaining fast inference speed. 
 
-<table>
-<tr>
-<td>
+
 <center>
-<img src="./pic/cs-rep.png">
-</br>
-The changes of topology for a multi-branch model when adopting CS-Rep.
+    <img src="./pic/cs-rep.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">The changes of topology for a multi-branch model when adopting CS-Rep.</div>
 </center>
-</td>
-</tr>
-</table>
+
 
 
 
