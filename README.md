@@ -60,10 +60,14 @@ python3 sid_inference_cos.py  --trials trials  --checkpoint trained_model/net.pt
 
 ### results
 The results of Rep-TDDN on VoxCeleb1 test set with out AS-Norm.
- | Model | EER (%) | minDCF08 | minDCF10 |
- | ---- | ---- | ---- | ----|
- | Rep-TDNN | 1.17009 | 0.0662 | 0.1654 |
- | Rep-TDNN(CS-Rep) | 1.17541 | 0.0676| 0.1697 |
+<center>
+    <img src="./pic/results_table.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
 
 The score file of the models in the table are given in this program ("rep_tdnn_demo/score/cos_score.score.original" and "rep_tdnn_demo/score/cos_score.score.cs-rep"). The code for getting EER, minDCF08, and minDCF10 are as following:
 ```Bash
