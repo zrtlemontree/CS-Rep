@@ -63,7 +63,7 @@ sid/compute_min_dcf.py --c-miss 10  --p-target 0.01 cos_score.score.original  tr
 ### results
 The results of Rep-TDDN on VoxCeleb1 test set with out AS-Norm.
 |Model|EER (%)|minDCF08|minDCF10|
-|-----|-----|-----|-----|
+| ---- | ---- | ---- | ----|
 |Rep-TDNN|1.17009|0.0662|0.1654|
 |Rep-TDNN(CS-Rep)|1.17541|0.0676|0.1697|
 
