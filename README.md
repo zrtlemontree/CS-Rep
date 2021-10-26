@@ -57,15 +57,13 @@ Run the Rep-TDNN with CS-Rep to inference. Kaldi will be used in script to calcu
 python3 sid_inference_cos.py  --trials trials  --checkpoint trained_model/net.pth  --feature-path /data1/data_fbank/voxceleb1/test --feature-type wav  --gpu-id "0"  --output ./  --rep True
 ```
 
-sid/compute_min_dcf.py --c-miss 10  --p-target 0.01 cos_score.score.original  trials2
-
 
 ### results
 The results of Rep-TDDN on VoxCeleb1 test set with out AS-Norm.
-|Model|EER (%)|minDCF08|minDCF10|
-| ---- | ---- | ---- | ----|
-|Rep-TDNN|1.17009|0.0662|0.1654|
-|Rep-TDNN(CS-Rep)|1.17541|0.0676|0.1697|
+ | Model | EER (%) | minDCF08 | minDCF10 |
+ | ---- | ---- | ---- | ----|
+ | Rep-TDNN | 1.17009 | 0.0662 | 0.1654 |
+ | Rep-TDNN(CS-Rep) | 1.17541 | 0.0676| 0.1697 |
 
 The score file of the models in the table are given in this program ("rep_tdnn_demo/score/cos_score.score.original" and "rep_tdnn_demo/score/cos_score.score.cs-rep"). The code for getting EER, minDCF08, and minDCF10 are as following:
 ```Bash
