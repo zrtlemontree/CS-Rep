@@ -59,7 +59,7 @@ python3 sid_inference_cos.py  --trials trials  --checkpoint trained_model/net.pt
 
 
 ### results
-The results of Rep-TDDN on VoxCeleb1 test set with out AS-Norm.
+The results of Rep-TDDN on VoxCeleb1 test set with out AS-Norm. Note that we not use any data augmentation for the paper.
 <center>
     <img src="./pic/results_table.png">
     <br>
