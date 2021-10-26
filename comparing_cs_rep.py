@@ -7,7 +7,7 @@ from rep_tdnn import Xvector
 
 '''
 The demo of the inference speed test for Rep-TDNN. 
-The inference speed margin of used CS-Rep or not will increase as the performance of the device increases.
+The inference speed margin of used CS-Rep or not will increase with the increasing of  the performance of the device. .
 Such as the speed margin of Rep-TDNN with CS-Rep or without CS-Rep on GPU is huger than on CPU.
 A huge "inference_samples" will generate more stable results of the inference speed. Such as on a server with 
 CPU used 1000 or a server with GPU used 50000 ,etc.

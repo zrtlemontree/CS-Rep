@@ -45,7 +45,7 @@ Firstly, run the path.sh.
 
 ### inference speed comparing
 
-A demo of the inference speed test for Rep-TDNN. The inference speed margin of used CS-Rep or not will increase as the performance of the device increases. 
+A demo of the inference speed test for Rep-TDNN. The inference speed margin of used CS-Rep or not will increase with the increasing of  the performance of the device. 
 ```Bash
 python3 comparing_cs_rep.py 
 ```
@@ -56,3 +56,27 @@ Run the Rep-TDNN with CS-Rep to inference. Kaldi will be used in script to calcu
 ```Bash
 python3 sid_inference_cos.py  --trials trials  --checkpoint trained_model/net.pth  --feature-path /data1/data_fbank/voxceleb1/test --feature-type wav  --gpu-id "0"  --output ./  --rep True
 ```
+
+sid/compute_min_dcf.py --c-miss 10  --p-target 0.01 cos_score.score.original  trials2
+
+
+### results
+The results of Rep-TDDN on VoxCeleb1 test set with out AS-Norm.
+|Model|EER (%)|minDCF08|minDCF10|
+|-----|-----|-----|-----|
+|Rep-TDNN|1.17009|0.0662|0.1654|
+|Rep-TDNN(CS-Rep)|1.17541|0.0676|0.1697|
+
+The score file of the models in the table are given in this program ("rep_tdnn_demo/score/cos_score.score.original" and "rep_tdnn_demo/score/cos_score.score.cs-rep"). The code for getting EER, minDCF08, and minDCF10 are as following:
+```Bash
+paste -d  ' ' trials rep_tdnn_demo/score/cos_score.score.original  | awk -F ' ' '{print$6,$3}' | compute-eer  -
+sid/compute_min_dcf.py --c-miss 10  --p-target 0.01  rep_tdnn_demo/score/cos_score.score.original trials
+sid/compute_min_dcf.py --p-target 0.001  rep_tdnn_demo/score/cos_score.score.original trials
+
+paste -d  ' ' trials rep_tdnn_demo/score/cos_score.score.cs-rep  | awk -F ' ' '{print$6,$3}' | compute-eer  -
+sid/compute_min_dcf.py --c-miss 10  --p-target 0.01  rep_tdnn_demo/score/cos_score.score.cs-rep trials
+sid/compute_min_dcf.py --p-target 0.001  rep_tdnn_demo/score/cos_score.score.cs-rep trials
+
+```
+
+
