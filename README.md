@@ -15,7 +15,7 @@ In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TD
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">The changes of topology for a multi-branch model when adopting CS-Rep.</div>
+    padding: 2px;">**Fig. 1**: The topology changes for our model when adopting the proposed CS-Rep: (a) original topology of model, (b) step, (c) steps 2 and 3, and (d) step 4.</div>
 </center>
 
 
@@ -28,7 +28,7 @@ In this work, we adopted the proposed CS-Rep to build a novel TDNN called Rep-TD
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">The topologies of Rep-TDNN without and with CS-Rep. (Left): The multi-branch design in the training period. (Right): The plain topology in the inference period.</div>
+    padding: 2px;">**Fig. 2**:The topologies of Rep-TDNN without and with CS-Rep. (Left): The multi-branch design in the training period. (Right): The plain topology in the inference period.</div>
 </center>
 
 ## Requirement
